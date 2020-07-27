@@ -1,0 +1,83 @@
+@font-face{
+    font-family: 'myfont';
+    src: url('TPR/TPR.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'myfont', serif;
+    background: #000000;
+    color: white;
+    
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+header p{
+    font-size: 20px;
+}
+.pads{
+    
+    width: 100%;
+    display: flex;
+}
+.pads > div{
+    height: 150px;
+    width: 100vw;
+    
+}
+.pad1{
+    background: #bb86fc;
+}
+.pad2{
+    background: #FF6E40;
+}
+.pad3{
+    background: #9FA8DA;
+}
+.pad4{
+    background: #FFF59D;
+}
+.pad5{
+    background:#F48FB1;
+    
+}
+.pad6{
+    background: #81D4FA;
+}
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%
+    }
+    50%{
+        bottom: 60%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+
+}
